@@ -1,0 +1,19 @@
+---
+title: "index.Rmd"
+output: html_document
+date: "2022-11-10"
+---
+
+```{r setup, include=FALSE}
+source("/Users/melaniekuo/Documents/info201/exercises/exercises-melaniekuo1/x10/rmd-practice-admin-melaniekuo1/source/analysis.R")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### COVID Report
+
+The number of US COVID cases is `r get_total_cases()`, and the number of deaths
+is `r get_total_deaths()`. 
+
+```{r echo=FALSE}
+cases_plot
+```
